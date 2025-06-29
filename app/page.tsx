@@ -1467,12 +1467,12 @@ export default function HomePage() {
       {/* Floating Contact Button */}
       <div className="fixed bottom-8 right-8 z-50">
         <Button
-          className="w-16 h-16 bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold rounded-full shadow-2xl transform hover:scale-110 transition-all animate-bounce"
-          title="立即下载"
+          className="w-16 h-16 bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold rounded-full shadow-2xl transform hover:scale-110 transition-all animate-bounce"
+          title="联系客服"
           asChild
         >
-          <Link href="https://pan.baidu.com/s/1K4XDk2n11Kyd_CCia3BiHg?pwd=9527" target="_blank">
-            <Download className="w-8 h-8" />
+          <Link href="https://work.weixin.qq.com/ca/cawcde545684bd4afc" target="_blank">
+            <MessageSquare className="w-8 h-8" />
           </Link>
         </Button>
       </div>
