@@ -96,15 +96,26 @@ export default function HomePage() {
               联系我们
             </a>
           </nav>
-          <Button
-            className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all"
-            asChild
-          >
-            <Link href="https://pan.baidu.com/s/1K4XDk2n11Kyd_CCia3BiHg?pwd=9527" target="_blank">
-              <Download className="w-5 h-5 mr-2" />
-              立即下载
-            </Link>
-          </Button>
+          <div className="flex items-center space-x-4">
+            <Button
+              className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all"
+              asChild
+            >
+              <Link href="https://pan.baidu.com/s/1K4XDk2n11Kyd_CCia3BiHg?pwd=9527" target="_blank">
+                <Download className="w-5 h-5 mr-2" />
+                立即下载
+              </Link>
+            </Button>
+            <Button
+              className="bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all"
+              asChild
+            >
+              <Link href="https://work.weixin.qq.com/ca/cawcde545684bd4afc" target="_blank">
+                <MessageSquare className="w-5 h-5 mr-2" />
+                联系客服
+              </Link>
+            </Button>
+          </div>
         </div>
       </header>
 
@@ -180,7 +191,7 @@ export default function HomePage() {
               <Button
                 size="lg"
                 variant="outline"
-                className="border-3 border-teal-400 text-teal-700 hover:bg-teal-50 font-bold text-xl px-8 py-4 rounded-full"
+                className="border-3 border-teal-400 text-teal-700 hover:bg-teal-50 font-bold text-xl px-8 py-4 rounded-full bg-transparent"
                 onClick={() => document.getElementById("demo")?.scrollIntoView({ behavior: "smooth" })}
               >
                 <Code className="w-6 h-6 mr-3" />
@@ -928,7 +939,7 @@ export default function HomePage() {
                   <p className="text-sm text-gray-700 font-semibold">
                     ⚠️ 监管要求：平台不支持自行注册和充值
                     <br />
-                    请联系管理员进行账户开通和充值操作
+                    请联系管理员进行账户开通操作
                   </p>
                 </div>
                 <div className="space-y-4">
@@ -1233,11 +1244,11 @@ export default function HomePage() {
                 <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <MessageSquare className="w-10 h-10 text-white" />
                 </div>
-                <CardTitle className="text-2xl font-black text-gray-900">💬 官方微信</CardTitle>
-                <CardDescription className="text-2xl font-black text-yellow-600 my-4">NobodySMS</CardDescription>
+                <CardTitle className="text-2xl font-black text-gray-900">💼 企业微信</CardTitle>
+                <CardDescription className="text-2xl font-black text-yellow-600 my-4">点击加入企业微信</CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4">
-                <p className="text-gray-700 font-semibold text-lg">添加官方微信客服</p>
+                <p className="text-gray-700 font-semibold text-lg">加入官方企业微信群</p>
                 <p className="text-gray-600">获取最新资讯和专业技术支持</p>
                 <div className="space-y-2 text-sm text-gray-500">
                   <p>⏰ 服务时间: 24/7 在线</p>
@@ -1245,8 +1256,13 @@ export default function HomePage() {
                   <p>🎯 账户开通和充值服务</p>
                   <p>📱 下载客户端后联系开通</p>
                 </div>
-                <Button className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold px-8 py-3 rounded-full shadow-lg">
-                  立即添加
+                <Button
+                  className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold px-8 py-3 rounded-full shadow-lg"
+                  asChild
+                >
+                  <Link href="https://work.weixin.qq.com/ca/cawcde545684bd4afc" target="_blank">
+                    立即加入
+                  </Link>
                 </Button>
               </CardContent>
             </Card>
@@ -1403,9 +1419,6 @@ export default function HomePage() {
             <div className="space-y-6">
               <h3 className="text-2xl font-black text-teal-400">📞 联系方式</h3>
               <div className="space-y-3 text-gray-300">
-                <p className="text-lg">
-                  <span className="font-bold">官方微信:</span> NobodySMS
-                </p>
                 <p className="text-lg">
                   <span className="font-bold">社区编号:</span> Nobody 9527
                 </p>
