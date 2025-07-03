@@ -101,7 +101,7 @@ export default function HomePage() {
               className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all"
               asChild
             >
-              <Link href="https://pan.baidu.com/s/1K4XDk2n11Kyd_CCia3BiHg?pwd=9527" target="_blank">
+              <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                 <Download className="w-5 h-5 mr-2" />
                 立即下载
               </Link>
@@ -183,7 +183,7 @@ export default function HomePage() {
                 className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold text-xl px-8 py-4 rounded-full shadow-xl transform hover:scale-105 transition-all"
                 asChild
               >
-                <Link href="https://pan.baidu.com/s/1K4XDk2n11Kyd_CCia3BiHg?pwd=9527" target="_blank">
+                <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                   <Download className="w-6 h-6 mr-3" />
                   立即下载客户端
                 </Link>
@@ -456,7 +456,7 @@ export default function HomePage() {
                 className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold text-lg px-8 py-4 rounded-full shadow-lg"
                 asChild
               >
-                <Link href="https://pan.baidu.com/s/1K4XDk2n11Kyd_CCia3BiHg?pwd=9527" target="_blank">
+                <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                   <Download className="w-5 h-5 mr-3" />
                   立即下载
                 </Link>
@@ -916,7 +916,7 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-red-400 to-pink-400 hover:from-red-500 hover:to-pink-500 text-white font-bold text-xl py-4 rounded-full shadow-lg transform hover:scale-105 transition-all"
                   asChild
                 >
-                  <Link href="https://pan.baidu.com/s/1K4XDk2n11Kyd_CCia3BiHg?pwd=9527" target="_blank">
+                  <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                     <Download className="w-5 h-5 mr-3" />
                     立即下载客户端
                   </Link>
@@ -963,7 +963,7 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold text-xl py-4 rounded-full shadow-lg transform hover:scale-105 transition-all"
                   asChild
                 >
-                  <Link href="https://pan.baidu.com/s/1K4XDk2n11Kyd_CCia3BiHg?pwd=9527" target="_blank">
+                  <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                     <Download className="w-5 h-5 mr-3" />
                     立即下载客户端
                   </Link>
