@@ -27,6 +27,8 @@ import {
   RefreshCw,
   Download,
   AlertTriangle,
+  Search,
+  LinkIcon,
 } from "lucide-react"
 import { AnimatedBackground } from "@/components/animated-background"
 import { FloatingElements } from "@/components/floating-elements"
@@ -58,7 +60,7 @@ export default function HomePage() {
               <div className="text-xs text-gray-500 font-semibold">9527 社区出品</div>
             </div>
           </div>
-          <nav className="hidden md:flex items-center space-x-8">
+          <nav className="hidden md:flex items-center space-x-6">
             <a
               href="#features"
               className="text-gray-700 hover:text-yellow-600 transition-colors font-semibold cursor-pointer"
@@ -76,6 +78,12 @@ export default function HomePage() {
               className="text-gray-700 hover:text-yellow-600 transition-colors font-semibold cursor-pointer"
             >
               API文档
+            </a>
+            <a
+              href="#project-lookup"
+              className="text-gray-700 hover:text-yellow-600 transition-colors font-semibold cursor-pointer"
+            >
+              项目查询
             </a>
             <a
               href="#pricing"
@@ -103,7 +111,7 @@ export default function HomePage() {
             >
               <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                 <Download className="w-5 h-5 mr-2" />
-                立即下载
+                立即下载 v1.0
               </Link>
             </Button>
             <Button
@@ -185,7 +193,7 @@ export default function HomePage() {
               >
                 <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                   <Download className="w-6 h-6 mr-3" />
-                  立即下载客户端
+                  立即下载客户端 v1.0
                 </Link>
               </Button>
               <Button
@@ -458,7 +466,7 @@ export default function HomePage() {
               >
                 <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                   <Download className="w-5 h-5 mr-3" />
-                  立即下载
+                  立即下载 v1.0
                 </Link>
               </Button>
             </div>
@@ -761,6 +769,106 @@ export default function HomePage() {
         </div>
       </section>
 
+      {/* Project Lookup Section */}
+      <section id="project-lookup" className="py-20 bg-gradient-to-br from-indigo-50 to-purple-50 relative">
+        <div className="container mx-auto px-4">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">🔍 项目ID查询工具</h2>
+            <p className="text-xl text-gray-600 font-semibold">基于区块链��术的短信前缀与项目ID映射查询</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
+            <div className="space-y-8">
+              <div className="space-y-6">
+                <h3 className="text-3xl font-black text-gray-900">🌐 区块链数据存储</h3>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  我们将短信前缀和对应的项目ID数据存储在区块链上，确保数据的透明性、不可篡改性和永久可访问性。
+                  用户可以通过我们的查询工具快速找到所需的项目ID。
+                </p>
+              </div>
+
+              <div className="space-y-4">
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-500" />
+                  <span className="text-lg font-semibold text-gray-700">实时同步区块链数据</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-500" />
+                  <span className="text-lg font-semibold text-gray-700">支持模糊搜索和精确匹配</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-500" />
+                  <span className="text-lg font-semibold text-gray-700">覆盖全球主流平台前缀</span>
+                </div>
+                <div className="flex items-center space-x-3">
+                  <CheckCircle className="w-6 h-6 text-green-500" />
+                  <span className="text-lg font-semibold text-gray-700">数据永久保存，不会丢失</span>
+                </div>
+              </div>
+
+              <div className="bg-indigo-50 border-l-4 border-indigo-400 p-6 rounded-lg">
+                <h4 className="text-xl font-bold text-indigo-900 mb-3">🔗 如何使用</h4>
+                <div className="space-y-2 text-sm text-indigo-800">
+                  <p>1. 访问项目ID查询工具</p>
+                  <p>2. 输入收到的短信前缀或关键词</p>
+                  <p>3. 系统自动匹配对应的项目ID</p>
+                  <p>4. 复制项目ID用于API调用</p>
+                </div>
+              </div>
+
+              <Button
+                className="bg-gradient-to-r from-indigo-400 to-purple-400 hover:from-indigo-500 hover:to-purple-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg"
+                asChild
+              >
+                <Link href="https://smsnobody.netlify.app/" target="_blank">
+                  <Search className="w-5 h-5 mr-3" />
+                  打开查询工具
+                </Link>
+              </Button>
+            </div>
+
+            <div className="relative">
+              <div className="bg-gradient-to-br from-indigo-100 to-purple-100 rounded-3xl p-8 shadow-2xl">
+                <div className="bg-white rounded-2xl p-6 shadow-lg">
+                  <div className="flex items-center justify-between mb-6">
+                    <h4 className="text-xl font-black text-gray-900">项目ID查询</h4>
+                    <Badge className="bg-indigo-100 text-indigo-800">区块链</Badge>
+                  </div>
+
+                  <div className="space-y-4">
+                    <div className="bg-gray-50 border border-gray-200 p-4 rounded-lg">
+                      <div className="text-sm text-gray-600 mb-2">搜索示例</div>
+                      <div className="font-mono text-lg text-gray-800">微信 → 项目ID: 1001</div>
+                      <div className="font-mono text-lg text-gray-800">WhatsApp → 项目ID: 2001</div>
+                      <div className="font-mono text-lg text-gray-800">Telegram → 项目ID: 3001</div>
+                    </div>
+
+                    <div className="bg-indigo-50 border-l-4 border-indigo-400 p-4 rounded">
+                      <div className="text-sm text-indigo-600 mb-2">区块链特性</div>
+                      <div className="space-y-1 text-xs text-indigo-700">
+                        <p>✓ 数据不可篡改</p>
+                        <p>✓ 永久存储</p>
+                        <p>✓ 去中心化</p>
+                        <p>✓ 公开透明</p>
+                      </div>
+                    </div>
+
+                    <div className="flex items-center justify-between p-4 bg-gradient-to-r from-indigo-50 to-purple-50 rounded">
+                      <span className="text-gray-600">数据来源</span>
+                      <span className="font-bold text-indigo-600">区块链网络</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="absolute -top-4 -right-4 w-16 h-16 bg-gradient-to-br from-indigo-400 to-purple-400 rounded-full flex items-center justify-center shadow-lg animate-pulse">
+                <LinkIcon className="w-8 h-8 text-white" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Testimonials Section */}
       <section id="testimonials" className="py-20 bg-gradient-to-br from-purple-100 to-pink-100 relative">
         <div className="container mx-auto px-4">
@@ -869,11 +977,11 @@ export default function HomePage() {
               <CardHeader className="text-center bg-gradient-to-r from-red-400 to-pink-400 text-white rounded-t-lg">
                 <CardTitle className="text-3xl font-black">🔥 首充特惠</CardTitle>
                 <div className="text-5xl font-black my-6">
-                  充¥5
+                  充¥10
                   <span className="text-2xl font-bold opacity-90"> 得¥15</span>
                 </div>
                 <CardDescription className="text-lg font-bold text-white/90">
-                  新用户首次充值享受 3.3 折超值优惠
+                  新用户首次充值享受 6.6 折超值优惠
                 </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 p-8">
@@ -886,13 +994,13 @@ export default function HomePage() {
                 </div>
                 <div className="text-center space-y-4">
                   <div className="bg-white/90 rounded-xl p-4 border-2 border-red-200">
-                    <div className="text-3xl font-black text-red-600">3.3折</div>
+                    <div className="text-3xl font-black text-red-600">6.6折</div>
                     <div className="text-sm text-gray-600">超值优惠</div>
                   </div>
                   <div className="text-lg font-bold text-gray-700">
-                    💰 充值 ¥5 → 到账 ¥15
+                    💰 充值 ¥10 → 到账 ¥15
                     <br />📱 可接收 50 条验证码
-                    <br />🎁 相当于每条仅需 ¥0.1
+                    <br />🎁 相当于每条仅需 ¥0.2
                   </div>
                 </div>
                 <div className="space-y-4">
@@ -918,7 +1026,7 @@ export default function HomePage() {
                 >
                   <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                     <Download className="w-5 h-5 mr-3" />
-                    立即下载客户端
+                    立即下载客户端 v1.0
                   </Link>
                 </Button>
               </CardContent>
@@ -965,7 +1073,7 @@ export default function HomePage() {
                 >
                   <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                     <Download className="w-5 h-5 mr-3" />
-                    立即下载客户端
+                    立即下载客户端 v1.0
                   </Link>
                 </Button>
               </CardContent>
@@ -1189,7 +1297,7 @@ export default function HomePage() {
               <CardContent>
                 <p className="text-gray-700 leading-relaxed">
                   请先下载客户端，然后联系管理员（官方微信：NobodySMS）进行账户开通和充值操作。
-                  新用户首充享受3.3折优惠。
+                  新用户首充享受6.6折优惠。
                 </p>
               </CardContent>
             </Card>
@@ -1401,6 +1509,7 @@ export default function HomePage() {
                   { href: "#features", text: "功能特色" },
                   { href: "#demo", text: "产品演示" },
                   { href: "#api", text: "API文档" },
+                  { href: "#project-lookup", text: "项目查询" },
                   { href: "#pricing", text: "价格说明" },
                   { href: "#privacy", text: "隐私政策" },
                   { href: "#contact", text: "联系我们" },
@@ -1427,6 +1536,9 @@ export default function HomePage() {
                 </p>
                 <p className="text-lg">
                   <span className="font-bold">定价:</span> ¥0.3/条短信
+                </p>
+                <p className="text-lg">
+                  <span className="font-bold">客户端版本:</span> v1.0
                 </p>
               </div>
             </div>
