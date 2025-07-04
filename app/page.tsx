@@ -111,7 +111,7 @@ export default function HomePage() {
             >
               <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                 <Download className="w-5 h-5 mr-2" />
-                立即下载 v1.0
+                立即下载 v2.0
               </Link>
             </Button>
             <Button
@@ -193,7 +193,7 @@ export default function HomePage() {
               >
                 <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                   <Download className="w-6 h-6 mr-3" />
-                  立即下载客户端 v1.0
+                  立即下载客户端 v2.0
                 </Link>
               </Button>
               <Button
@@ -466,7 +466,7 @@ export default function HomePage() {
               >
                 <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                   <Download className="w-5 h-5 mr-3" />
-                  立即下载 v1.0
+                  立即下载 v2.0
                 </Link>
               </Button>
             </div>
@@ -1026,7 +1026,7 @@ export default function HomePage() {
                 >
                   <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                     <Download className="w-5 h-5 mr-3" />
-                    立即下载客户端 v1.0
+                    立即下载客户端 v2.0
                   </Link>
                 </Button>
               </CardContent>
@@ -1073,7 +1073,7 @@ export default function HomePage() {
                 >
                   <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                     <Download className="w-5 h-5 mr-3" />
-                    立即下载客户端 v1.0
+                    立即下载客户端 v2.0
                   </Link>
                 </Button>
               </CardContent>
@@ -1538,7 +1538,7 @@ export default function HomePage() {
                   <span className="font-bold">定价:</span> ¥0.3/条短信
                 </p>
                 <p className="text-lg">
-                  <span className="font-bold">客户端版本:</span> v1.0
+                  <span className="font-bold">客户端版本:</span> v2.0
                 </p>
               </div>
             </div>
