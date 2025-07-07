@@ -33,6 +33,7 @@ import {
 import { AnimatedBackground } from "@/components/animated-background"
 import { FloatingElements } from "@/components/floating-elements"
 import { ScrollIndicator } from "@/components/scroll-indicator"
+import { QRModal } from "@/components/qr-modal"
 
 export default function HomePage() {
   return (
@@ -114,15 +115,12 @@ export default function HomePage() {
                 立即下载 v2.0
               </Link>
             </Button>
-            <Button
-              className="bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all"
-              asChild
-            >
-              <Link href="https://work.weixin.qq.com/ca/cawcde545684bd4afc" target="_blank">
+            <QRModal title="联系客服">
+              <Button className="bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all">
                 <MessageSquare className="w-5 h-5 mr-2" />
                 联系客服
-              </Link>
-            </Button>
+              </Button>
+            </QRModal>
           </div>
         </div>
       </header>
@@ -774,7 +772,7 @@ export default function HomePage() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">🔍 项目ID查询工具</h2>
-            <p className="text-xl text-gray-600 font-semibold">基于区块链��术的短信前缀与项目ID映射查询</p>
+            <p className="text-xl text-gray-600 font-semibold">基于区块链技术的短信前缀与项目ID映射查询</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto">
@@ -1364,14 +1362,11 @@ export default function HomePage() {
                   <p>🎯 账户开通和充值服务</p>
                   <p>📱 下载客户端后联系开通</p>
                 </div>
-                <Button
-                  className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold px-8 py-3 rounded-full shadow-lg"
-                  asChild
-                >
-                  <Link href="https://work.weixin.qq.com/ca/cawcde545684bd4afc" target="_blank">
-                    立即加入
-                  </Link>
-                </Button>
+                <QRModal title="企业微信客服">
+                  <Button className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold px-8 py-3 rounded-full shadow-lg">
+                    立即联系
+                  </Button>
+                </QRModal>
               </CardContent>
             </Card>
 
@@ -1578,15 +1573,11 @@ export default function HomePage() {
 
       {/* Floating Contact Button */}
       <div className="fixed bottom-8 right-8 z-50">
-        <Button
-          className="w-16 h-16 bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold rounded-full shadow-2xl transform hover:scale-110 transition-all animate-bounce"
-          title="联系客服"
-          asChild
-        >
-          <Link href="https://work.weixin.qq.com/ca/cawcde545684bd4afc" target="_blank">
+        <QRModal title="联系客服">
+          <Button className="w-16 h-16 bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold rounded-full shadow-2xl transform hover:scale-110 transition-all animate-bounce">
             <MessageSquare className="w-8 h-8" />
-          </Link>
-        </Button>
+          </Button>
+        </QRModal>
       </div>
     </div>
   )
