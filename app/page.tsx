@@ -14,7 +14,6 @@ import {
   Zap,
   Shield,
   Globe,
-  Star,
   CheckCircle,
   Award,
   Sparkles,
@@ -67,6 +66,18 @@ export default function HomePage() {
               className="text-gray-700 hover:text-yellow-600 transition-colors font-semibold cursor-pointer"
             >
               功能特色
+            </a>
+            <a
+              href="#services"
+              className="text-gray-700 hover:text-yellow-600 transition-colors font-semibold cursor-pointer"
+            >
+              社区服务
+            </a>
+            <a
+              href="#services"
+              className="text-gray-700 hover:text-yellow-600 transition-colors font-semibold cursor-pointer"
+            >
+              社区服务
             </a>
             <a
               href="#demo"
@@ -175,14 +186,6 @@ export default function HomePage() {
               </div>
             </div>
 
-            <div className="bg-yellow-50 border-l-4 border-yellow-400 p-6 rounded-lg max-w-2xl mx-auto">
-              <p className="text-lg text-gray-700 font-semibold">
-                ⚠️ <span className="text-red-600">重要提醒</span>：根据监管要求，平台不支持自行注册和充值
-                <br />
-                如需使用服务，请下载客户端后联系管理员进行账户开通和充值操作
-              </p>
-            </div>
-
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
               <Button
                 size="lg"
@@ -221,6 +224,139 @@ export default function HomePage() {
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-3 border-orange-300 hover:border-orange-400 transition-all transform hover:scale-105 hover:-rotate-1 hover:shadow-2xl hover:shadow-yellow-400/20 transition-all duration-500 ease-out">
                 <div className="text-3xl font-black text-orange-600">9527</div>
                 <div className="text-sm text-gray-600 font-semibold">社区编号</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Community Services Section */}
+      <section
+        id="services"
+        className="py-20 bg-gradient-to-br from-blue-50 via-purple-50 to-pink-50 relative overflow-hidden"
+      >
+        <div className="absolute inset-0">
+          <div className="absolute top-10 right-10 w-40 h-40 bg-blue-200 rounded-full opacity-10 animate-pulse"></div>
+          <div className="absolute bottom-10 left-10 w-32 h-32 bg-purple-200 rounded-full opacity-10 animate-bounce"></div>
+        </div>
+
+        <div className="container mx-auto px-4 relative z-10">
+          <div className="text-center mb-16">
+            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">🎬 Nobody 社区服务</h2>
+            <p className="text-xl text-gray-600 font-semibold">Nobody 9527 社区为用户提供的免费优质服务</p>
+          </div>
+
+          <div className="grid lg:grid-cols-2 gap-12 max-w-6xl mx-auto">
+            {/* NobodyTV */}
+            <Card className="border-4 border-blue-400 shadow-2xl bg-gradient-to-br from-blue-50 to-indigo-50 transform hover:scale-105 transition-all duration-500">
+              <CardHeader className="text-center bg-gradient-to-r from-blue-400 to-indigo-400 text-white rounded-t-lg">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-4xl">🎬</span>
+                </div>
+                <CardTitle className="text-3xl font-black">Nobody TV</CardTitle>
+                <CardDescription className="text-lg font-bold text-white/90">完全免费的VIP视频观看平台</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6 p-8">
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-black text-gray-900">🎯 平台特色</h3>
+                  <div className="space-y-3">
+                    {[
+                      "🎬 全网VIP视频免费观看",
+                      "🚫 零广告纯净体验",
+                      "🎭 覆盖电影、电视剧、综艺",
+                      "⚡ 高清流畅播放",
+                      "🔄 实时更新最新资源",
+                      "📱 支持多设备观看",
+                      "🎪 包含各大平台独播内容",
+                      "💯 完全免费无需注册",
+                    ].map((feature, index) => (
+                      <div key={index} className="flex items-center space-x-3">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
+                        <span className="text-gray-700 font-semibold">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-blue-50 border-l-4 border-blue-400 p-4 rounded">
+                  <h4 className="text-lg font-bold text-blue-900 mb-2">🌟 服务说明</h4>
+                  <p className="text-blue-800 text-sm">
+                    Nobody TV 是社区倾力打造的免费视频平台，汇聚全网优质内容，
+                    让用户无需购买多个平台会员即可畅享所有VIP视频资源。
+                  </p>
+                </div>
+
+                <Button
+                  className="w-full bg-gradient-to-r from-blue-400 to-indigo-400 hover:from-blue-500 hover:to-indigo-500 text-white font-bold text-xl py-4 rounded-full shadow-lg transform hover:scale-105 transition-all"
+                  asChild
+                >
+                  <Link href="https://nobodytv.xyz/" target="_blank">
+                    🎬 立即观看
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+
+            {/* NobodySMS */}
+            <Card className="border-4 border-yellow-400 shadow-2xl bg-gradient-to-br from-yellow-50 to-orange-50 transform hover:scale-105 transition-all duration-500">
+              <CardHeader className="text-center bg-gradient-to-r from-yellow-400 to-orange-400 text-black rounded-t-lg">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4">
+                  <span className="text-4xl">📱</span>
+                </div>
+                <CardTitle className="text-3xl font-black">Nobody SMS</CardTitle>
+                <CardDescription className="text-lg font-bold text-black/80">专业的短信验证码接收平台</CardDescription>
+              </CardHeader>
+              <CardContent className="space-y-6 p-8">
+                <div className="space-y-4">
+                  <h3 className="text-2xl font-black text-gray-900">🎯 平台特色</h3>
+                  <div className="space-y-3">
+                    {[
+                      "⚡ 3秒内快速接收验证码",
+                      "🌍 支持所有主流平台",
+                      "🛡️ AES-256加密保护",
+                      "💰 每条仅需0.3元",
+                      "🔧 完整API接口支持",
+                      "👥 24/7专业客服",
+                      "📊 99.9%成功率保证",
+                      "🎁 新用户6.6折优惠",
+                    ].map((feature, index) => (
+                      <div key={index} className="flex items-center space-x-3">
+                        <CheckCircle className="w-5 h-5 text-green-500" />
+                        <span className="text-gray-700 font-semibold">{feature}</span>
+                      </div>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
+                  <h4 className="text-lg font-bold text-yellow-900 mb-2">🌟 服务说明</h4>
+                  <p className="text-yellow-800 text-sm">
+                    Nobody SMS 提供安全可靠的短信验证码接收服务， 支持全球主流应用平台，是开发者和用户的首选工具。
+                  </p>
+                </div>
+
+                <Button
+                  className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold text-xl py-4 rounded-full shadow-lg transform hover:scale-105 transition-all"
+                  asChild
+                >
+                  <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
+                    📱 下载客户端 v2.0
+                  </Link>
+                </Button>
+              </CardContent>
+            </Card>
+          </div>
+
+          <div className="text-center mt-16">
+            <div className="bg-gradient-to-r from-purple-100 to-pink-100 rounded-2xl p-8 max-w-4xl mx-auto">
+              <h3 className="text-3xl font-black text-gray-900 mb-4">🎉 Nobody 9527 社区承诺</h3>
+              <p className="text-xl text-gray-700 leading-relaxed">
+                我们致力于为用户提供<span className="font-bold text-purple-600">完全免费</span>的优质服务，
+                无论是观看VIP视频还是接收短信验证码，都以<span className="font-bold text-blue-600">用户体验</span>
+                为核心， 打造<span className="font-bold text-green-600">无广告、高效率</span>的服务平台。
+              </p>
+              <div className="mt-6 text-2xl font-black bg-gradient-to-r from-purple-600 via-blue-600 to-green-600 bg-clip-text text-transparent">
+                EVERY NOBODY IS SOMEBODY
               </div>
             </div>
           </div>
@@ -867,92 +1003,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section id="testimonials" className="py-20 bg-gradient-to-br from-purple-100 to-pink-100 relative">
-        <div className="container mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl lg:text-5xl font-black text-gray-900 mb-6">💬 用户评价</h2>
-            <p className="text-xl text-gray-600 font-semibold">看看用户们怎么说</p>
-          </div>
-
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-            <Card className="border-4 border-purple-200 bg-white shadow-xl transform hover:scale-105 hover:-rotate-1 transition-all duration-500 ease-out">
-              <CardHeader>
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-purple-400 to-pink-400 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">张</span>
-                  </div>
-                  <div>
-                    <div className="font-bold text-gray-900">张同学</div>
-                    <div className="text-sm text-gray-500">大学生</div>
-                  </div>
-                </div>
-                <div className="flex space-x-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 leading-relaxed">
-                  "作为学生党，经常需要注册各种平台，Nobody SMS 真的太方便了！
-                  API接口简单易用，价格便宜，速度超快，强烈推荐！"
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-4 border-teal-200 bg-white shadow-xl transform hover:scale-105 hover:-rotate-1 transition-all duration-500 ease-out">
-              <CardHeader>
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-teal-400 to-cyan-400 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">李</span>
-                  </div>
-                  <div>
-                    <div className="font-bold text-gray-900">李经理</div>
-                    <div className="text-sm text-gray-500">电商运营</div>
-                  </div>
-                </div>
-                <div className="flex space-x-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 leading-relaxed">
-                  "工作中经常需要测试各种应用的注册流程，Nobody SMS 帮了大忙！
-                  支持的平台多，成功率高，API文档详细，集成很方便。"
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="border-4 border-yellow-200 bg-white shadow-xl transform hover:scale-105 hover:-rotate-1 transition-all duration-500 ease-out">
-              <CardHeader>
-                <div className="flex items-center space-x-3">
-                  <div className="w-12 h-12 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center">
-                    <span className="text-white font-bold">王</span>
-                  </div>
-                  <div>
-                    <div className="font-bold text-gray-900">王开发</div>
-                    <div className="text-sm text-gray-500">程序员</div>
-                  </div>
-                </div>
-                <div className="flex space-x-1">
-                  {[1, 2, 3, 4, 5].map((i) => (
-                    <Star key={i} className="w-5 h-5 fill-yellow-400 text-yellow-400" />
-                  ))}
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 leading-relaxed">
-                  "开发测试时经常需要验证码，Nobody SMS 的 API 接口很稳定， 文档也很详细，大大提高了我们的开发效率！"
-                </p>
-              </CardContent>
-            </Card>
-          </div>
-        </div>
-      </section>
-
       {/* Pricing Section */}
       <section id="pricing" className="py-20 bg-gradient-to-br from-gray-100 to-gray-200 relative">
         <div className="absolute inset-0">
@@ -1188,7 +1238,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  <strong>1. 数据加密：</strong>所有敏感数据采用AES-256加密技术存储，传输过程使用HTTPS协议保护。
+                  <strong>1. 数据加��：</strong>所有敏感数据采用AES-256加密技术存储，传输过程使用HTTPS协议保护。
                   用户密码经过不可逆加密处理，我们无法获取您的明文密码。
                 </p>
                 <p>
@@ -1502,6 +1552,7 @@ export default function HomePage() {
               <div className="space-y-3">
                 {[
                   { href: "#features", text: "功能特色" },
+                  { href: "#services", text: "社区服务" },
                   { href: "#demo", text: "产品演示" },
                   { href: "#api", text: "API文档" },
                   { href: "#project-lookup", text: "项目查询" },
