@@ -123,7 +123,7 @@ export default function HomePage() {
             >
               <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                 <Download className="w-5 h-5 mr-2" />
-                立即下载 v2.0
+                立即下载 v3.0
               </Link>
             </Button>
             <QRModal title="联系客服">
@@ -194,7 +194,7 @@ export default function HomePage() {
               >
                 <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                   <Download className="w-6 h-6 mr-3" />
-                  立即下载客户端 v2.0
+                  立即下载客户端 v3.0
                 </Link>
               </Button>
               <Button
@@ -600,7 +600,7 @@ export default function HomePage() {
               >
                 <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                   <Download className="w-5 h-5 mr-3" />
-                  立即下载 v2.0
+                  立即下载 v3.0
                 </Link>
               </Button>
             </div>
@@ -1074,7 +1074,7 @@ export default function HomePage() {
                 >
                   <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                     <Download className="w-5 h-5 mr-3" />
-                    立即下载客户端 v2.0
+                    立即下载客户端 v3.0
                   </Link>
                 </Button>
               </CardContent>
@@ -1121,7 +1121,7 @@ export default function HomePage() {
                 >
                   <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
                     <Download className="w-5 h-5 mr-3" />
-                    立即下载客户端 v2.0
+                    立即下载客户端 v3.0
                   </Link>
                 </Button>
               </CardContent>
