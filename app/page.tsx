@@ -9,7 +9,6 @@ import { SmoothScroll } from "@/components/smooth-scroll"
 import { Favicon } from "@/components/favicon"
 import {
   MessageSquare,
-  ShoppingCart,
   Users,
   Zap,
   Shield,
@@ -24,7 +23,6 @@ import {
   Trash2,
   Ban,
   RefreshCw,
-  Download,
   AlertTriangle,
   Search,
   LinkIcon,
@@ -32,7 +30,6 @@ import {
 import { AnimatedBackground } from "@/components/animated-background"
 import { FloatingElements } from "@/components/floating-elements"
 import { ScrollIndicator } from "@/components/scroll-indicator"
-import { QRModal } from "@/components/qr-modal"
 
 export default function HomePage() {
   return (
@@ -66,12 +63,6 @@ export default function HomePage() {
               className="text-gray-700 hover:text-yellow-600 transition-colors font-semibold cursor-pointer"
             >
               功能特色
-            </a>
-            <a
-              href="#services"
-              className="text-gray-700 hover:text-yellow-600 transition-colors font-semibold cursor-pointer"
-            >
-              社区服务
             </a>
             <a
               href="#services"
@@ -121,17 +112,20 @@ export default function HomePage() {
               className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all"
               asChild
             >
-              <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
-                <Download className="w-5 h-5 mr-2" />
-                立即下载 v3.0
+              <Link href="https://nobodysms.online/" target="_blank">
+                <Zap className="w-5 h-5 mr-2" />
+                立即使用 v3.0
               </Link>
             </Button>
-            <QRModal title="联系客服">
-              <Button className="bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all">
+            <Button
+              className="bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold text-lg px-6 py-3 rounded-full shadow-lg transform hover:scale-105 transition-all"
+              asChild
+            >
+              <Link href="https://qm.qq.com/q/vh22lJKE3C" target="_blank">
                 <MessageSquare className="w-5 h-5 mr-2" />
                 联系客服
-              </Button>
-            </QRModal>
+              </Link>
+            </Button>
           </div>
         </div>
       </header>
@@ -192,9 +186,9 @@ export default function HomePage() {
                 className="bg-gradient-to-r from-yellow-400 to-yellow-500 hover:from-yellow-500 hover:to-yellow-600 text-black font-bold text-xl px-8 py-4 rounded-full shadow-xl transform hover:scale-105 transition-all"
                 asChild
               >
-                <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
-                  <Download className="w-6 h-6 mr-3" />
-                  立即下载客户端 v3.0
+                <Link href="https://nobodysms.online/" target="_blank">
+                  <Zap className="w-6 h-6 mr-3" />
+                  立即使用客户端 v3.0
                 </Link>
               </Button>
               <Button
@@ -210,7 +204,7 @@ export default function HomePage() {
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-3 border-yellow-300 hover:border-yellow-400 transition-all transform hover:scale-105 hover:-rotate-1 hover:shadow-2xl hover:shadow-yellow-400/20 transition-all duration-500 ease-out">
-                <div className="text-3xl font-black text-yellow-600">¥0.3</div>
+                <div className="text-3xl font-black text-yellow-600">¥0.36</div>
                 <div className="text-sm text-gray-600 font-semibold">每条短信</div>
               </div>
               <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-4 shadow-xl border-3 border-teal-300 hover:border-teal-400 transition-all transform hover:scale-105 hover:-rotate-1 hover:shadow-2xl hover:shadow-yellow-400/20 transition-all duration-500 ease-out">
@@ -314,7 +308,7 @@ export default function HomePage() {
                       "⚡ 3秒内快速接收验证码",
                       "🌍 支持所有主流平台",
                       "🛡️ AES-256加密保护",
-                      "💰 每条仅需0.3元",
+                      "💰 每条仅需0.36元",
                       "🔧 完整API接口支持",
                       "👥 24/7专业客服",
                       "📊 99.9%成功率保证",
@@ -328,19 +322,19 @@ export default function HomePage() {
                   </div>
                 </div>
 
-                <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded">
-                  <h4 className="text-lg font-bold text-yellow-900 mb-2">🌟 服务说明</h4>
-                  <p className="text-yellow-800 text-sm">
-                    Nobody SMS 提供安全可靠的短信验证码接收服务， 支持全球主流应用平台，是开发者和用户的首选工具。
+                <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded mb-4">
+                  <p className="text-sm text-gray-700 font-semibold">
+                    ⚠️ 监管要求：平台不支持自行注册和充值
+                    <br />
+                    请先访问平台，然后联系管理员进行账户开通和充值操作
                   </p>
                 </div>
-
                 <Button
                   className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold text-xl py-4 rounded-full shadow-lg transform hover:scale-105 transition-all"
                   asChild
                 >
-                  <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
-                    📱 下载客户端 v2.0
+                  <Link href="https://nobodysms.online/" target="_blank">
+                    📱 立即使用 v3.0
                   </Link>
                 </Button>
               </CardContent>
@@ -598,9 +592,9 @@ export default function HomePage() {
                 className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold text-lg px-8 py-4 rounded-full shadow-lg"
                 asChild
               >
-                <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
-                  <Download className="w-5 h-5 mr-3" />
-                  立即下载 v3.0
+                <Link href="https://nobodysms.online/" target="_blank">
+                  <Zap className="w-5 h-5 mr-3" />
+                  立即使用 v3.0
                 </Link>
               </Button>
             </div>
@@ -1037,7 +1031,7 @@ export default function HomePage() {
                   <p className="text-sm text-gray-700 font-semibold">
                     ⚠️ 监管要求：平台不支持自行注册和充值
                     <br />
-                    请先下载客户端，然后联系管理员进行账户开通和充值操作
+                    请先访问平台，然后联系管理员进行账户开通和充值操作
                   </p>
                 </div>
                 <div className="text-center space-y-4">
@@ -1045,11 +1039,7 @@ export default function HomePage() {
                     <div className="text-3xl font-black text-red-600">6.6折</div>
                     <div className="text-sm text-gray-600">超值优惠</div>
                   </div>
-                  <div className="text-lg font-bold text-gray-700">
-                    💰 充值 ¥10 → 到账 ¥15
-                    <br />📱 可接收 50 条验证码
-                    <br />🎁 相当于每条仅需 ¥0.2
-                  </div>
+                  <div className="text-lg font-bold text-gray-700">💡 最低充值门槛为 ¥3 元</div>
                 </div>
                 <div className="space-y-4">
                   {[
@@ -1072,9 +1062,9 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-red-400 to-pink-400 hover:from-red-500 hover:to-pink-500 text-white font-bold text-xl py-4 rounded-full shadow-lg transform hover:scale-105 transition-all"
                   asChild
                 >
-                  <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
-                    <Download className="w-5 h-5 mr-3" />
-                    立即下载客户端 v3.0
+                  <Link href="https://nobodysms.online/" target="_blank">
+                    <Zap className="w-5 h-5 mr-3" />
+                    立即使用客户端 v3.0
                   </Link>
                 </Button>
               </CardContent>
@@ -1085,10 +1075,12 @@ export default function HomePage() {
               <CardHeader className="text-center bg-gradient-to-r from-yellow-400 to-orange-400 text-black rounded-t-lg">
                 <CardTitle className="text-3xl font-black">🎯 按条计费</CardTitle>
                 <div className="text-6xl font-black my-6">
-                  ¥0.3
+                  ¥0.36
                   <span className="text-2xl font-bold opacity-80">/条</span>
                 </div>
-                <CardDescription className="text-lg font-bold text-black/80">每条短信验证码仅需 0.3 元</CardDescription>
+                <CardDescription className="text-lg font-bold text-black/80">
+                  每条短信验证码仅需 0.36 元
+                </CardDescription>
               </CardHeader>
               <CardContent className="space-y-6 p-8">
                 <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded mb-4">
@@ -1119,9 +1111,9 @@ export default function HomePage() {
                   className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold text-xl py-4 rounded-full shadow-lg transform hover:scale-105 transition-all"
                   asChild
                 >
-                  <Link href="https://polkadotgame.net/NobodySMS.rar" target="_blank">
-                    <Download className="w-5 h-5 mr-3" />
-                    立即下载客户端 v3.0
+                  <Link href="https://nobodysms.online/" target="_blank">
+                    <Zap className="w-5 h-5 mr-3" />
+                    立即使用客户端 v3.0
                   </Link>
                 </Button>
               </CardContent>
@@ -1238,7 +1230,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent className="space-y-4 text-gray-700 leading-relaxed">
                 <p>
-                  <strong>1. 数据加��：</strong>所有敏感数据采用AES-256加密技术存储，传输过程使用HTTPS协议保护。
+                  <strong>1. 数据加密：</strong>所有敏感数据采用AES-256加密技术存储，传输过程使用HTTPS协议保护。
                   用户密码经过不可逆加密处理，我们无法获取您的明文密码。
                 </p>
                 <p>
@@ -1320,8 +1312,18 @@ export default function HomePage() {
               <h3 className="text-xl font-bold text-blue-900 mb-3">📞 联系我们</h3>
               <p className="text-blue-800">如果您对本隐私政策有任何疑问或建议，请通过以下方式联系我们：</p>
               <div className="mt-3 space-y-2 text-blue-700">
-                <p>• 官方微信：NobodySMS</p>
-                <p>• 社区：Nobody 9527</p>
+                <p>
+                  • QQ好友：
+                  <Link href="https://qm.qq.com/q/vh22lJKE3C" target="_blank" className="text-blue-600 hover:underline">
+                    点击添加
+                  </Link>
+                </p>
+                <p>
+                  • QQ群：
+                  <Link href="https://qm.qq.com/q/577qIcQoQo" target="_blank" className="text-blue-600 hover:underline">
+                    Nobody SMS 3群
+                  </Link>
+                </p>
                 <p>• 服务时间：24/7 在线支持</p>
               </div>
             </div>
@@ -1344,8 +1346,7 @@ export default function HomePage() {
               </CardHeader>
               <CardContent>
                 <p className="text-gray-700 leading-relaxed">
-                  请先下载客户端，然后联系管理员（官方微信：NobodySMS）进行账户开通和充值操作。
-                  新用户首充享受6.6折优惠。
+                  请先访问平台，然后通过QQ联系管理员进行账户开通和充值操作。 新用户首充享受6.6折优惠。
                 </p>
               </CardContent>
             </Card>
@@ -1394,54 +1395,58 @@ export default function HomePage() {
             <p className="text-xl text-gray-600 font-semibold">多种方式联系 Nobody 9527 社区，获得专业支持</p>
           </div>
 
+          {/* Whole contact section changed to QQ number and QQ group */}
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
             <Card className="border-4 border-yellow-200 hover:border-yellow-400 transition-all transform hover:scale-105 bg-gradient-to-br from-yellow-50 to-orange-50 shadow-xl">
               <CardHeader className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-yellow-400 to-orange-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
                   <MessageSquare className="w-10 h-10 text-white" />
                 </div>
-                <CardTitle className="text-2xl font-black text-gray-900">💼 企业微信</CardTitle>
-                <CardDescription className="text-2xl font-black text-yellow-600 my-4">点击加入企业微信</CardDescription>
+                <CardTitle className="text-2xl font-black text-gray-900">💬 QQ好友</CardTitle>
+                <CardDescription className="text-2xl font-black text-yellow-600 my-4">点击添加QQ好友</CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4">
-                <p className="text-gray-700 font-semibold text-lg">加入官方企业微信群</p>
-                <p className="text-gray-600">获取最新资讯和专业技术支持</p>
+                <p className="text-gray-700 font-semibold text-lg">添加客服QQ好友</p>
+                <p className="text-gray-600">获取专业技术支持和账户服务</p>
                 <div className="space-y-2 text-sm text-gray-500">
                   <p>⏰ 服务时间: 24/7 在线</p>
                   <p>⚡ 平均响应: 5 分钟内</p>
                   <p>🎯 账户开通和充值服务</p>
-                  <p>📱 下载客户端后联系开通</p>
+                  <p>📱 访问平台后联系开通</p>
                 </div>
-                <QRModal title="企业微信客服">
-                  <Button className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold px-8 py-3 rounded-full shadow-lg">
-                    立即联系
-                  </Button>
-                </QRModal>
+                <Button
+                  className="bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold px-8 py-3 rounded-full shadow-lg"
+                  asChild
+                >
+                  <Link href="https://qm.qq.com/q/vh22lJKE3C" target="_blank">
+                    立即添加
+                  </Link>
+                </Button>
               </CardContent>
             </Card>
 
             <Card className="border-4 border-teal-200 hover:border-teal-400 transition-all transform hover:scale-105 bg-gradient-to-br from-teal-50 to-cyan-50 shadow-xl">
               <CardHeader className="text-center">
                 <div className="w-20 h-20 bg-gradient-to-br from-teal-400 to-cyan-400 rounded-full flex items-center justify-center mx-auto mb-6 shadow-lg">
-                  <ShoppingCart className="w-10 h-10 text-white" />
+                  <Users className="w-10 h-10 text-white" />
                 </div>
-                <CardTitle className="text-2xl font-black text-gray-900">🛒 闲鱼官方店</CardTitle>
-                <CardDescription className="text-2xl font-black text-teal-600 my-4">官方认证店铺</CardDescription>
+                <CardTitle className="text-2xl font-black text-gray-900">👥 QQ群</CardTitle>
+                <CardDescription className="text-2xl font-black text-teal-600 my-4">Nobody SMS 3群</CardDescription>
               </CardHeader>
               <CardContent className="text-center space-y-4">
-                <p className="text-gray-700 font-semibold text-lg">访问闲鱼官方店铺</p>
-                <p className="text-gray-600">了解更多产品信息和优惠活动</p>
-                <div className="text-sm text-gray-500 space-y-1">
-                  <p>⭐ 店铺评分: 4.9/5.0</p>
-                  <p>🛍️ 月销量: 1000+ 单</p>
-                  <p>🎁 专属优惠活动</p>
+                <p className="text-gray-700 font-semibold text-lg">加入官方QQ群</p>
+                <p className="text-gray-600">与社区成员交流，获取最新资讯</p>
+                <div className="space-y-2 text-sm text-gray-500">
+                  <p>⭐ 群内用户: 活跃交流</p>
+                  <p>🛍️ 最新动态: 实时更新</p>
+                  <p>🎁 群内专属活动</p>
                 </div>
                 <Button
                   className="bg-gradient-to-r from-teal-400 to-cyan-400 hover:from-teal-500 hover:to-cyan-500 text-white font-bold px-8 py-3 rounded-full shadow-lg"
                   asChild
                 >
-                  <Link href="https://m.tb.cn/h.hd3s5xz?tk=AkWbVFhrfq5" target="_blank">
-                    访问店铺
+                  <Link href="https://qm.qq.com/q/577qIcQoQo" target="_blank">
+                    加入群聊
                   </Link>
                 </Button>
               </CardContent>
@@ -1506,7 +1511,7 @@ export default function HomePage() {
                   <p>🏆 行业地位: 领先平台</p>
                 </div>
                 <Button
-                  className="bg-gradient-to-r from-green-400 to-emerald-400 hover:from-green-500 hover:to-emerald-500 text-white font-bold px-6 py-3 rounded-full shadow-lg"
+                  className="bg-gradient-to-r from-green-400 to-emerald-500 hover:from-green-500 hover:to-emerald-600 text-white font-bold px-6 py-3 rounded-full shadow-lg"
                   asChild
                 >
                   <Link href="https://polkadotgame.net/" target="_blank">
@@ -1581,10 +1586,10 @@ export default function HomePage() {
                   <span className="font-bold">服务时间:</span> 24/7 在线支持
                 </p>
                 <p className="text-lg">
-                  <span className="font-bold">定价:</span> ¥0.3/条短信
+                  <span className="font-bold">定价:</span> ¥0.36/条短信
                 </p>
                 <p className="text-lg">
-                  <span className="font-bold">客户端版本:</span> v2.0
+                  <span className="font-bold">客户端版本:</span> v3.0
                 </p>
               </div>
             </div>
@@ -1610,7 +1615,7 @@ export default function HomePage() {
 
           <div className="border-t-2 border-gray-800 mt-12 pt-8 text-center space-y-4">
             <p className="text-gray-400 text-lg">
-              &copy; 2024 Nobody SMS Platform. All rights reserved. | Nobody 9527 社区荣誉出品
+              &copy; 2026 Nobody SMS Platform. All rights reserved. | Nobody 9527 社区荣誉出品
             </p>
             <div className="flex justify-center space-x-2 text-2xl font-black">
               <span className="text-yellow-400">EVERY</span>
@@ -1624,11 +1629,14 @@ export default function HomePage() {
 
       {/* Floating Contact Button */}
       <div className="fixed bottom-8 right-8 z-50">
-        <QRModal title="联系客服">
-          <Button className="w-16 h-16 bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold rounded-full shadow-2xl transform hover:scale-110 transition-all animate-bounce">
+        <Button
+          className="w-16 h-16 bg-gradient-to-r from-teal-400 to-teal-500 hover:from-teal-500 hover:to-teal-600 text-white font-bold rounded-full shadow-2xl transform hover:scale-110 transition-all animate-bounce"
+          asChild
+        >
+          <Link href="https://qm.qq.com/q/vh22lJKE3C" target="_blank">
             <MessageSquare className="w-8 h-8" />
-          </Button>
-        </QRModal>
+          </Link>
+        </Button>
       </div>
     </div>
   )
