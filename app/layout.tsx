@@ -8,7 +8,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "NobodySMS - Nobody 9527 社区专业接码平台",
   description:
-    "Nobody 9527 社区倾力打造的专业接码平台，提供安全可靠的短信验证码接收服务。支持所有平台，24/7在线服务，每条短信仅需0.3元。",
+    "Nobody 9527 社区倾力打造的专业接码平台，提供安全可靠的短信验证码接收服务。支持所有平台，24/7在线服务，每条短信仅需0.36元。",
   keywords: "接码平台,短信验证码,Nobody,9527,验证码接收,API接口,短信接收,验证码平台",
   authors: [{ name: "Nobody 9527 Community" }],
   creator: "Nobody 9527 Community",
@@ -24,7 +24,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: "NobodySMS - Nobody 9527 社区专业接码平台",
     description:
-      "专业的短信验证码接收服务，支持所有平台，安全可靠，价格实惠。每条短信仅需0.3元，新用户首充享3.3折优惠。",
+      "专业的短信验证码接收服务，支持所有平台，安全可靠，价格实惠。每条短信仅需0.36元，新用户首充享6.6折优惠。",
     url: "https://nobodysms.com",
     siteName: "NobodySMS",
     images: [
@@ -59,7 +59,7 @@ export const metadata: Metadata = {
     canonical: "https://nobodysms.com",
   },
   category: "technology",
-    generator: 'v0.dev'
+  generator: "v0.dev",
 }
 
 export default function RootLayout({
