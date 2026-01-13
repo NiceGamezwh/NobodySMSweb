@@ -3,7 +3,7 @@
 import type React from "react"
 
 import { useState } from "react"
-import Image from "next/image"
+import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { X } from "lucide-react"
@@ -25,28 +25,33 @@ export function QRModal({ children, title = "联系客服" }: QRModalProps) {
         </DialogHeader>
 
         <div className="space-y-6 p-4">
-          <div className="text-center">
-            <Image
-              src="/images/contact-qr.jpeg"
-              alt="NobodySMS 联系客服二维码"
-              width={400}
-              height={600}
-              className="rounded-xl shadow-lg border-2 border-gray-200 mx-auto"
-              priority
-            />
-          </div>
+          <div className="text-center space-y-4">
+            <h3 className="text-xl font-bold text-gray-900">选择联系方式</h3>
 
-          <div className="text-center space-y-3">
-            <h3 className="text-xl font-bold text-gray-900">扫码联系客服</h3>
-            <p className="text-gray-600 leading-relaxed">
-              扫描上方二维码添加客服微信
-              <br />
-              获取专业技术支持和账户服务
-            </p>
+            <div className="space-y-4">
+              <Button
+                className="w-full bg-gradient-to-r from-yellow-400 to-orange-400 hover:from-yellow-500 hover:to-orange-500 text-black font-bold py-4 rounded-full"
+                asChild
+              >
+                <Link href="https://qm.qq.com/q/vh22lJKE3C" target="_blank">
+                  💬 添加QQ好友
+                </Link>
+              </Button>
+
+              <Button
+                className="w-full bg-gradient-to-r from-teal-400 to-cyan-400 hover:from-teal-500 hover:to-cyan-500 text-white font-bold py-4 rounded-full"
+                asChild
+              >
+                <Link href="https://qm.qq.com/q/577qIcQoQo" target="_blank">
+                  👥 加入QQ群 (Nobody SMS 3群)
+                </Link>
+              </Button>
+            </div>
+
             <div className="bg-yellow-50 border-l-4 border-yellow-400 p-4 rounded text-left">
               <p className="text-sm text-gray-700 font-semibold">
                 ⚠️ 重要提醒：
-                <br />• 请先下载客户端 v2.0
+                <br />• 请先访问平台 v3.0
                 <br />• 联系客服进行账户开通
                 <br />• 新用户首充享 6.6 折优惠
               </p>
