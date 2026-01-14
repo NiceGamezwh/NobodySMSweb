@@ -114,7 +114,7 @@ export default function HomePage() {
             >
               <Link href="https://nobodysms.online/" target="_blank">
                 <Zap className="w-5 h-5 mr-2" />
-                立即使用 v3.0
+                立即登陆
               </Link>
             </Button>
             <Button
@@ -188,7 +188,7 @@ export default function HomePage() {
               >
                 <Link href="https://nobodysms.online/" target="_blank">
                   <Zap className="w-6 h-6 mr-3" />
-                  立即使用客户端 v3.0
+                  立即登陆
                 </Link>
               </Button>
               <Button
